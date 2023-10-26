@@ -6,3 +6,4 @@ tabulate
 pdf2image
 streamlit
 tiktoken
+sentence_transformers
