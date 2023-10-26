@@ -39,14 +39,11 @@ image_path = os.path.join(current_directory, 'src', '3.jpg')
 imagen2 = Image.open(image_path)
 st.sidebar.image(imagen2, caption='', use_column_width=True)
 
-acceso = 'denegado'
-if st.sidebar.button("Acceso Invitado"):
-    acceso = "invitado"
 
 usuario = st.sidebar.text_input("Usuario")
 clave = st.sidebar.text_input("Clave", type="password")
 # Verificar las credenciales
-if clave == "clave1" or acceso == 'invitado':
+if (usuario == 'usuario1' and clave == "clave1"):
     st.sidebar.write("¡Acceso permitido!")
 
 
@@ -96,4 +93,4 @@ if clave == "clave1" or acceso == 'invitado':
         st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
 
 else:
-    st.sidebar.write("Sin acceso. Coloque una clave válida o ingrese como invitado")
+    st.sidebar.write("Sin acceso. Coloque un usuario y clave válidos o ingrese como invitado")
