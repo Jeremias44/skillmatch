@@ -17,16 +17,17 @@ index = pinecone.Index(index_name=indexName)
 embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2') # modelo de embeddings
 docSearch = Pinecone.from_existing_index(indexName, embeddings)
 
+st.title('¡Encontrá el Talento Que Buscás!🚀')
 from PIL import Image
 # Obtener la ruta absoluta del directorio actual
 current_directory = os.path.dirname(__file__)
 # Construir la ruta completa a la imagen 1
-image_path = os.path.join(current_directory, 'src', '1.jpg')
+image_path = os.path.join(current_directory, 'src', '1.png')
 # Cargar la imagen y mostrarla
 imagen = Image.open(image_path)
 st.image(imagen, caption='', use_column_width=True)
 # Construir la ruta completa a la imagen 2
-image_path = os.path.join(current_directory, 'src', '2.jpg')
+image_path = os.path.join(current_directory, 'src', '2.png')
 # Cargar la imagen y mostrarla
 imagen = Image.open(image_path)
 st.image(imagen, caption='', use_column_width=True)
@@ -34,7 +35,7 @@ st.image(imagen, caption='', use_column_width=True)
 
 # Crear una columna lateral
 # Construir la ruta completa a la imagen 3
-image_path = os.path.join(current_directory, 'src', '3.jpg')
+image_path = os.path.join(current_directory, 'src', '3.png')
 # Cargar la imagen y mostrarla en la columna lateral
 imagen2 = Image.open(image_path)
 st.sidebar.image(imagen2, caption='', use_column_width=True)
