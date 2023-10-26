@@ -3,8 +3,15 @@ import pinecone
 from langchain.vectorstores import Pinecone
 from langchain.embeddings import HuggingFaceEmbeddings
 import os
+from dotenv import load_dotenv
 
-pinecone.init(api_key='98dca4b8-ad18-44c2-a874-d9089eaf079c', environment='gcp-starter') # key de Jeremias44
+
+# Cargar las variables de entorno desde el archivo .env
+load_dotenv()
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_ENVIROMENT = os.getenv('PINECONE_ENVIROMENT')
+
+pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIROMENT) # key de Jeremias44
 indexName = 'index-skill-matchcv' # indexName de Jeremias44
 # Conexión con index
 index = pinecone.Index(index_name=indexName)

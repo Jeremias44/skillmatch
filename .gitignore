@@ -1,1 +1,5 @@
+# entorno virtual
 venvCV/
+
+# variables de entorno
+.env
