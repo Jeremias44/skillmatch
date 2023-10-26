@@ -6,3 +6,6 @@ venvCV/
 
 # cvs sintéticos
 CreadorCV/CV/
+
+# carga-documentos
+CreadorDB/carga-documentos/
