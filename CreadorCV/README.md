@@ -4,14 +4,14 @@ Este documento explica el proceso de creación de currículums sintéticos utili
 
 ## Función `crear_cv`
 
-El proceso comienza con una función llamada `crear_cv`. Esta función toma como entrada listas de nombres, apellidos, experiencias, habilidades, herramientas y puestos de trabajo. A continuación, se detalla cómo se crea un currículo sintético:
+El proceso comienza con una función llamada `crear_cv`. Esta función toma como entrada listas de nombres, apellidos, experiencias, habilidades, herramientas y puestos de trabajo. A continuación, se detalla cómo se crea un currículum sintético:
 
 - Se selecciona un nombre y un apellido al azar de las listas proporcionadas.
 - Se elige una experiencia y habilidades al azar de las listas proporcionadas.
 - Se selecciona un número aleatorio de 3 a 12 herramientas técnicas de la lista proporcionada.
 - Se elige un número aleatorio de 1 a 7 puestos de trabajo de la lista proporcionada.
 
-Luego, se crea el contenido del currículo en formato de texto, que incluye:
+Luego, se crea el contenido del currículum en formato de texto, que incluye:
 
 - Nombre y apellido.
 - Correo electrónico basado en el nombre y apellido.
@@ -20,7 +20,7 @@ Luego, se crea el contenido del currículo en formato de texto, que incluye:
 - Historial de experiencia laboral con puestos y años de experiencia.
 - Idiomas (español nativo y, en algunos casos, otros idiomas).
 
-Finalmente, el currículo se guarda en un archivo de texto con un nombre autoincremental en la carpeta "CV".
+Finalmente, el currículum se guarda en un archivo de texto con un nombre autoincremental en la carpeta "CV".
 
 ## Personalización de las Categorías
 
