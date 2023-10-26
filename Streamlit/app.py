@@ -20,12 +20,12 @@ docSearch = Pinecone.from_existing_index(indexName, embeddings)
 
 from PIL import Image
 # Cargar una imagen desde un archivo .jpg o .png
-imagen = Image.open('1.jpg')
+imagen = Image.open('src/1.jpg')
 # Mostrar la imagen en la aplicación
 st.image(imagen, caption='', use_column_width=True)
 
 # Cargar una imagen desde un archivo .jpg o .png
-imagen = Image.open('2.jpg') 
+imagen = Image.open('src/2.jpg') 
 # Mostrar la imagen en la aplicación
 st.image(imagen, caption='', use_column_width=True)
 
