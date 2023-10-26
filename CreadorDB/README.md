@@ -38,9 +38,9 @@ El DataFrame se guarda en un archivo CSV llamado `cv_df.csv` para mantener un re
 
 El proyecto se distribuye bajo la licencia MIT, lo que significa que es de código abierto y se puede utilizar y modificar libremente. Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto.
 
-* Email: jeremiaspombo@outlook.com
-* LinkedIn: Jeremías Pombo en LinkedIn
-* GitHub: Jeremías Pombo en GitHub
+* Linkedin: [Jeremías Pombo](https://www.linkedin.com/in/jeremiaspombo/)
+* GitHub: [GitHub](https://github.com/Jeremias44)
+* Correo electrónico: jeremiaspombo@outlook.com
 
 ---
 
