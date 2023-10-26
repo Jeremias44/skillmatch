@@ -3,3 +3,6 @@ venvCV/
 
 # variables de entorno
 .env
+
+# cvs sintéticos
+CreadorCV/CV/

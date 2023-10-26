@@ -19,15 +19,26 @@ embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6
 docSearch = Pinecone.from_existing_index(indexName, embeddings)
 
 from PIL import Image
-# Cargar una imagen desde un archivo .jpg o .png
-imagen = Image.open('src/1.jpg')
-# Mostrar la imagen en la aplicación
+# Obtener la ruta absoluta del directorio actual
+current_directory = os.path.dirname(__file__)
+
+# Construir la ruta completa a la imagen
+image_path = os.path.join(current_directory, 'src', '1.jpg')
+
+# Cargar la imagen y mostrarla
+imagen = Image.open(image_path)
 st.image(imagen, caption='', use_column_width=True)
 
+#from PIL import Image
 # Cargar una imagen desde un archivo .jpg o .png
-imagen = Image.open('src/2.jpg') 
+#imagen = Image.open('src/1.jpg')
 # Mostrar la imagen en la aplicación
-st.image(imagen, caption='', use_column_width=True)
+#st.image(imagen, caption='', use_column_width=True)
+
+# Cargar una imagen desde un archivo .jpg o .png
+#imagen = Image.open('src/2.jpg') 
+# Mostrar la imagen en la aplicación
+#st.image(imagen, caption='', use_column_width=True)
 
 
 
