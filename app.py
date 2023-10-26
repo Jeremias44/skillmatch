@@ -11,7 +11,16 @@ index = pinecone.Index(index_name=indexName)
 embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2') # modelo de embeddings
 docSearch = Pinecone.from_existing_index(indexName, embeddings)
 
+from PIL import Image
+# Cargar una imagen desde un archivo .jpg o .png
+imagen = Image.open('1.jpg')
+# Mostrar la imagen en la aplicación
+st.image(imagen, caption='', use_column_width=True)
 
+# Cargar una imagen desde un archivo .jpg o .png
+imagen = Image.open('2.jpg') 
+# Mostrar la imagen en la aplicación
+st.image(imagen, caption='', use_column_width=True)
 
 
 
@@ -50,9 +59,9 @@ docs=docSearch.similarity_search(query, k=k, filter=
                                     'user': {'$in': opcion}
                                     })
 
-st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
-st.subheader("🚀🚀 Estos son los Match de tu Búsqueda Actual 🚀🚀")
-st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
+st.subheader('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
+st.subheader('🚀🚀 Estos son los Match de tu Búsqueda Actual 🚀🚀')
+st.subheader('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
 for i, doc in enumerate(docs):
     st.write(f'Documento {i+1}: ')
     st.write(doc.metadata['name'])
