@@ -17,7 +17,7 @@ index = pinecone.Index(index_name=indexName)
 embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2') # modelo de embeddings
 docSearch = Pinecone.from_existing_index(indexName, embeddings)
 
-st.title('¡Encontrá el Talento Que Buscás!🚀')
+st.title('¡eeeeeEncontrá el Talento Que Buscás!🚀')
 from PIL import Image
 # Obtener la ruta absoluta del directorio actual
 current_directory = os.path.dirname(__file__)
