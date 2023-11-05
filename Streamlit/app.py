@@ -22,12 +22,12 @@ from PIL import Image
 # Obtener la ruta absoluta del directorio actual
 current_directory = os.path.dirname(__file__)
 # Construir la ruta completa a la imagen 1
-image_path = os.path.join(current_directory, 'src', '1.png')
+image_path = os.path.join(current_directory, 'media', '1.png')
 # Cargar la imagen y mostrarla
 imagen = Image.open(image_path)
 st.image(imagen, caption='', use_column_width=True)
 # Construir la ruta completa a la imagen 2
-image_path = os.path.join(current_directory, 'src', '2.png')
+image_path = os.path.join(current_directory, 'media', '2.png')
 # Cargar la imagen y mostrarla
 imagen = Image.open(image_path)
 st.image(imagen, caption='', use_column_width=True)
@@ -35,7 +35,7 @@ st.image(imagen, caption='', use_column_width=True)
 
 # Crear una columna lateral
 # Construir la ruta completa a la imagen 3
-image_path = os.path.join(current_directory, 'src', '3.png')
+image_path = os.path.join(current_directory, 'media', '3.png')
 # Cargar la imagen y mostrarla en la columna lateral
 imagen2 = Image.open(image_path)
 st.sidebar.image(imagen2, caption='', use_column_width=True)
@@ -43,6 +43,13 @@ st.sidebar.image(imagen2, caption='', use_column_width=True)
 
 usuario = st.sidebar.text_input("Usuario")
 clave = st.sidebar.text_input("Clave", type="password")
+
+
+st.sidebar.markdown("### Contacta con el autor del sitio")
+st.sidebar.markdown("[Jeremías Pombo en LinkedIn](https://www.linkedin.com/in/jeremiaspombo/)")
+st.sidebar.markdown("### Visita el repositorio del proyecto")
+st.sidebar.markdown("[Repositorio de GitHub](https://github.com/Jeremias44/skillmatch)")
+
 # Verificar las credenciales
 if (usuario == 'usuario1' and clave == "clave1"):
     st.sidebar.write("¡Acceso permitido!")
@@ -83,7 +90,8 @@ if (usuario == 'usuario1' and clave == "clave1"):
                                         #'timeSeconds': {'$eq': int},
                                         'user': {'$in': opcion}
                                         })
-
+    
+if st.button("Ver Currículums Seleccionados"):
     st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
     st.subheader('🚀🚀 Estos son los Match de tu Búsqueda Actual 🚀🚀')
     st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')

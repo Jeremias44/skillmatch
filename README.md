@@ -1,6 +1,6 @@
 # SkillMatchCV - Plataforma de Búsqueda de Currículums
 <div style="text-align:center;">
-<img src="src/1.png" alt="Descripción de la imagen" width="700">
+<img src="media/1.png" alt="Descripción de la imagen" width="700">
 </div>
 
 
@@ -29,7 +29,7 @@ La carpeta "Streamlit" contiene la aplicación web desarrollada con Streamlit. L
 
 ## Indicaciones para una Búsqueda Efectiva
 <div style="text-align:center;">
-<img src="src/2.png" alt="Descripción de la imagen" width="700">
+<img src="media/2.png" alt="Descripción de la imagen" width="700">
 </div>
 
 Para realizar búsquedas efectivas en la plataforma, tener en cuenta las siguientes recomendaciones:
@@ -53,5 +53,5 @@ El proyecto se distribuye bajo la licencia MIT, lo que significa que es de códi
 * Correo electrónico: jeremiaspombo@outlook.com
 
 <div style="text-align:center;">
-<img src="src/3.png" alt="Descripción de la imagen" width="700">
+<img src="media/3.png" alt="Descripción de la imagen" width="700">
 </div>
