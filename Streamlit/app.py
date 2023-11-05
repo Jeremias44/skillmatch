@@ -78,18 +78,16 @@ if (usuario == 'usuario1' and clave == "clave1"):
                                         'user': {'$in': opcion}
                                         })
     
-if st.button("Ver Currículums Seleccionados"):
+
     st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
     st.subheader('🚀🚀 Estos son los Match de tu Búsqueda Actual 🚀🚀')
     st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
-    try:
-        for i, doc in enumerate(docs):
-            st.write(f'Documento {i+1}: ')
-            st.write(doc.metadata['name'])
-            st.write(doc.page_content)
-            st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
-    except:
-        st.write('Se solicita acceder con credenciales (usuario y clave)')
+
+    for i, doc in enumerate(docs):
+        st.write(f'Documento {i+1}: ')
+        st.write(doc.metadata['name'])
+        st.write(doc.page_content)
+        st.write('🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀')
 
 else:
     st.sidebar.write("Sin acceso. Coloque un usuario y clave válidos o ingrese como invitado")
